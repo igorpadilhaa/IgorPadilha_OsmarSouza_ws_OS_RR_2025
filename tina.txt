@@ -1,0 +1,69 @@
+Tina version 3.8.5/lm -- 04/19/25 -- LAAS/CNRS
+
+mode -W
+
+INPUT NET ------------------------------------------------------- 
+
+parsed net primos
+
+9 places, 6 transitions, 16 arcs
+
+net primos
+tr CalculoIntervalo [0,0] Unidade1  -> Final 
+tr _T_0_ [0,0] Final _P_1_  -> Resultado 
+tr _T_2_ [0,0] _P_4_ _P_7_  -> _P_1_ 
+tr _T_3_ [0,0] Unidade2  -> _P_4_ 
+tr _T_4_ [0,0] Principal  -> Unidade1 _P_6_ 
+tr _T_5_ [0,0] _P_6_  -> Unidade2 _P_7_ 
+
+0.002s
+
+REACHABILITY ANALYSIS ------------------------------------------- 
+
+bounded
+
+1 classe(s), 0 transition(s)
+
+CLASSES:
+
+class 0
+    marking
+	
+    domain
+
+
+REACHABILITY GRAPH:
+
+0 -> 
+
+0.000s
+
+LIVENESS ANALYSIS ----------------------------------------------- 
+
+not live
+possibly reversible
+
+1 dead classe(s), 1 live classe(s)
+6 dead transition(s), 0 live transition(s)
+
+dead classe(s): 0
+
+dead transition(s): _T_5_ _T_4_ _T_3_ _T_2_ _T_0_ CalculoIntervalo
+
+STRONG CONNECTED COMPONENTS:
+
+0 : 0
+
+SCC GRAPH:
+
+0 ->
+
+0.000s
+
+ANALYSIS COMPLETED ---------------------------------------------- 
+
+# net primos, 9 places, 6 transitions, 16 arcs                         #
+# bounded, not live, possibly reversible                               #
+# abstraction        count      props      psets       dead       live #
+#      states            1          9          ?          1          1 # 
+# transitions            0          6          ?          6          0 #

@@ -1,0 +1,18 @@
+net primos
+tr _T_0_ [0,0] Final _P_1_ -> Resultado 
+tr CalculoIntervalo [0,0] Unidade1 -> Final 
+tr _T_2_ [0,0] _P_7_ _P_4_ -> _P_1_ 
+tr _T_3_ [0,0] Unidade2 -> _P_4_ 
+tr _T_4_ [0,0] Principal -> Unidade1 _P_6_ 
+tr _T_5_ [0,0] _P_6_ -> Unidade2 _P_7_ 
+
+pl Unidade1 (0)
+pl _P_1_ (0)
+pl Final (0)
+pl Unidade2 (0)
+pl _P_4_ (0)
+pl Principal (0)
+pl _P_6_ (0)
+pl _P_7_ (0)
+pl Resultado (0)
+

@@ -5,6 +5,7 @@
 
 #include "buffer.h"
 #include "timer.h"
+#include "benchmark.h"
 
 #define MAX_BOUND 1000000
 #define UNITS 4
@@ -129,6 +130,7 @@ int main() {
     printf("Elasped time: "); print_duration(elapsed_time); putchar('\n');
     printf("Total primes: %d\n", prime_count);
 
+    benchmark_save("basic-primes", UNITS, prime_count, elapsed_time);
     bf_free(results);
     return 0;
 }
